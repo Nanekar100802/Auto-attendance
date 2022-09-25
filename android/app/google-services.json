@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "923595448482",
+    "project_id": "auto-attendance-70fe2",
+    "storage_bucket": "auto-attendance-70fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923595448482:android:2d89b69e37c9f1cd4477fb",
+        "android_client_info": {
+          "package_name": "com.example.gcek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923595448482-a61durhjfnvqinkt09jucso5og6c4ig4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdRDs0Qj9_AUiFGdCFxBzDUSIO_5_otOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923595448482-a61durhjfnvqinkt09jucso5og6c4ig4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
