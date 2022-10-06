@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gcek/app_form/final_submit.dart';
+import 'package:gcek/users/app_form/final_submit.dart';
 //import 'package:gcek/app_form/leaveapp.dart';
-import 'package:gcek/app_form/toptext.dart';
+import 'package:gcek/users/app_form/toptext.dart';
 //import 'package:gcek/leavesmry.dart';
 //import 'package:gcek/main.dart';
 
@@ -231,20 +231,24 @@ class _formContentState extends State<formContent> {
           padding: const EdgeInsets.only(top: 100),
           child: Stack(
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  // inputField('Name'),
-                  // inputField('Prn No'),
-                  //inputField('Contact No.'),
-                  _hostelname(),
-                  inputField('Room No.'),
-                  date(),
-                  inputField('Subject'),
-                  desc(),
-                  submitButton('Submit'),
-                ],
+              Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // inputField('Name'),
+                      // inputField('Prn No'),
+                      //inputField('Contact No.'),
+                      _hostelname(),
+                      inputField('Room No.'),
+                      date(),
+                      inputField('Subject'),
+                      desc(),
+                      submitButton('Submit'),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

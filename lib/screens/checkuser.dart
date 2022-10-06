@@ -3,7 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter/src/widgets/container.dart';
 // import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:gcek/screens/dashboard.dart';
+import 'package:gcek/Admin/ad_dashboard.dart';
+import 'package:gcek/users/dashboard.dart';
 import 'welcome/welcome_screen.dart';
 
 class user extends StatelessWidget {
@@ -16,7 +17,7 @@ class user extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return dashboard();
+            return ad_dashboard();
           } else {
             return welcomeScreen();
           }

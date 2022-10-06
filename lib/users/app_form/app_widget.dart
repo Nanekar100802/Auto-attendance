@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:gcek/app_form/center_clip.dart';
-import 'package:gcek/app_form/center_widget_painter.dart';
+import 'package:gcek/users/app_form/center_clip.dart';
+import 'package:gcek/users/app_form/center_widget_painter.dart';
 
 class CenterWidget extends StatelessWidget {
   final Size size;

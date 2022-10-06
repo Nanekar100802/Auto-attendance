@@ -1,17 +1,17 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import 'package:gcek/app_form/app_widget.dart';
 
-class LeaveSmry extends StatefulWidget {
-  const LeaveSmry({Key? key}) : super(key: key);
+import 'package:gcek/users/app_form/app_widget.dart';
+import 'package:gcek/users/app_form/formcontent.dart';
+
+class LeaveApp extends StatefulWidget {
+  const LeaveApp({Key? key}) : super(key: key);
 
   @override
-  State<LeaveSmry> createState() => _LeaveSmryState();
+  State<LeaveApp> createState() => _LeaveAppState();
 }
 
-class _LeaveSmryState extends State<LeaveSmry> {
+class _LeaveAppState extends State<LeaveApp> {
   Widget topWidget(double screenWidth) {
     return Transform.rotate(
       angle: -35 * math.pi / 180,
@@ -52,7 +52,6 @@ class _LeaveSmryState extends State<LeaveSmry> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(title: Text('Leave Summary')),
       body: Stack(
         children: [
           Positioned(
@@ -66,15 +65,9 @@ class _LeaveSmryState extends State<LeaveSmry> {
             child: bottomWidget(screenSize.width),
           ),
           CenterWidget(size: screenSize),
-          //  formContent(),
+          formContent(),
         ],
       ),
     );
   }
-/*  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Leave Summary')),
-    );
-  }*/
 }
